@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Marcenaria Planejar – Móveis Comerciais Premium</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f9f9f9; color: #333; line-height: 1.7; font-size: 16px; }
+/* HEADER */
+header {
+  background: #1e2a3a;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+header h1 { font-size: 3.5em; font-weight: bold; margin-bottom: 15px; }
+header p { font-size: 1.4em; font-weight: 600; margin-bottom: 25px; }
+header a { color: white; text-decoration: none; font-size: 1.2em; font-weight: bold; padding: 12px 25px; background-color: #f39c12; border-radius: 5px; transition: 0.3s; }
+header a:hover { background-color: #e67e22; }
+/* NAVIGATION */
+nav {
+  background: #34495e;
+  padding: 15px 0;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 25px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav a:hover { color: #f39c12; }
+/* SECTIONS */
+section {
+  max-width: 1200px;
+  margin: 40px auto;
+  background: white;
+  padding: 50px 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease-out;
+}
+section h2 {
+  color: #1e2a3a;
+  margin-bottom: 25px;
+  border-left: 6px solid #f39c12;
+  padding-left: 15px;
+  font-size: 2.5em;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+.services .service-card {
+  padding: 30px;
+  background: #f39c12;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.services .service-card:hover { transform: scale(1.05); }
+.services .service-card h3 { font-size: 1.8em; font-weight: bold; margin-bottom: 15px; }
+.services .service-card p { font-size: 1.2em; }
+/* BUTTON */
+a.button {
+  display: inline-block;
+  background: #f39c12;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+a.button:hover { background: #e67e22; }
+/* GALLERY */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+}
+.gallery div {
+  width: 32%;
+  height: 300px;
+  background: #d0d0d0;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+.gallery div:hover { transform: scale(1.05); }
+.gallery div span {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+/* TESTIMONIALS */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+.testimonials div {
+  padding: 30px;
+  background: #34495e;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.testimonials div p {
+  font-style: italic;
+  font-size: 1.2em;
+}
+.testimonials div h4 {
+  margin-top: 15px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+/* FOOTER */
+footer {
+  background: #34495e;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  margin-top: 40px;
+}
+footer p {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .services { grid-template-columns: repeat(2, 1fr); }
+  .testimonials { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .services { grid-template-columns: 1fr; }
+  .testimonials { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Marcenaria Planejar</h1>
+<p>Móveis Comerciais Premium – Óticas, Lojas, Aeroportos e Shoppings</p>
+<a href="https://wa.me/5511993010183" class="button">Solicite Orçamento</a>
+</header>
+
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#servicos">Serviços</a>
+<a href="#galeria">Galeria</a>
+<a href="#testemunhos">Depoimentos</a>
+<a href="#contato">Contato</a>
+</nav>
+
+<section id="sobre">
+<h2>Sobre Nós</h2>
+<p>A Marcenaria Planejar é especializada em móveis planejados para ambientes comerciais, com foco em qualidade, funcionalidade e design. Atendemos empresas de diversos segmentos, como óticas, shoppings, aeroportos e salas comerciais.</p>
+</section>
+
+<section id="servicos">
+<h2>Serviços</h2>
+<div class="services">
+  <div class="service-card">
+    <h3>Óticas</h3>
+    <p>Projetos exclusivos para óticas com vitrines, expositores e balcões planejados para maximizar a visibilidade dos produtos.</p>
+  </div>
+  <div class="service-card">
+    <h3>Shoppings</h3>
+    <p>Design de interiores para lojas de shoppings, respeitando normas e destacando a identidade visual da marca.</p>
+  </div>
+  <div class="service-card">
+    <h3>Aeroportos</h3>
+    <p>Projetos rápidos e eficazes, com móveis resistentes para o fluxo intenso de clientes em aeroportos.</p>
+  </div>
+</div>
+<a href="https://wa.me/5511993010183" class="button">Solicite Orçamento</a>
+</section>
+
+<section id="galeria">
+<h2>Galeria de Projetos</h2>
+<div class="gallery">
+  <div><span>Ótica</span></div>
+  <div><span>Shopping</span></div>
+  <div><span>Aeroporto</span></div>
+  <div><span>Quiosque</span></div>
+  <div><span>Loja</span></div>
+  <div><span>Farmácia</span></div>
+</div>
+</section>
+
+<section id="testemunhos">
+<h2>Depoimentos</h2>
+<div class="testimonials">
+  <div>
+    <p>"Excelente trabalho! Atenderam todas as nossas necessidades e entregaram no prazo!"</p>
+    <h4>João Silva - Proprietário de Ótica</h4>
+  </div>
+  <div>
+    <p>"Super satisfeitos com a qualidade do serviço e acabamento. Nosso espaço ficou incrível!"</p>
+    <h4>Maria Oliveira - Cliente Comercial</h4>
+  </div>
+  <div>
+    <p>"A Marcenaria Planejar transformou nossa loja em um ambiente moderno e funcional!"</p>
+    <h4>Paula Souza - Loja de Shopping</h4>
+  </div>
+</div>
+</section>
+
+<section id="contato">
+<h2>Contato</h2>
+<p>WhatsApp: <a href="https://wa.me/5511993010183" target="_blank">+55 11 99301-0183</a></p>
+<p>Instagram: <a href="https://www.instagram.com/marcenariaplanejar_/" target="_blank">@marcenariaplanejar_</a></p>
+<p>Atendemos São Paulo e região.</p>
+<a class="button" href="https://wa.me/5511993010183" target="_blank">Fale Conosco Agora</a>
+</section>
+
+<footer>
+<p>© 2025 Marcenaria Planejar — Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
