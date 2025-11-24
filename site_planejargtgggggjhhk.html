@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marcenaria Planejar</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #fafafa; color: #333; }
+    header { background: #2a1d0a; padding: 20px; display: flex; justify-content: space-between; align-items: center; color: #fff; }
+    header .logo { display: flex; align-items: center; gap: 15px; }
+    header img { height: 60px; }
+    nav a { color: #fff; margin-left: 20px; text-decoration: none; font-size: 18px; }
+    .hero-banner {
+      background-image: url('Imagem.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 140px 40px;
+      color: white;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    }
+    .hero-banner h1 { font-size: 52px; margin: 0; }
+    .hero-banner p { font-size: 22px; max-width: 600px; }
+    .section { padding: 60px; }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+      gap: 20px;
+    }
+    .card {
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    footer { background: #2a1d0a; padding: 30px; color: white; text-align: center; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="Imagem.jpg" alt="Logo Planejar" />
+    <h2>Marcenaria Planejar</h2>
+  </div>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section class="hero-banner">
+  <h1>Móveis Comerciais Planejados</h1>
+  <p>Especialistas em óticas, lojas de shopping, aeroportos e manutenção de lojas em São Paulo.</p>
+</section>
+
+<section id="servicos" class="section">
+  <h2>Serviços</h2>
+  <div class="card-grid">
+    <div class="card">Óticas</div>
+    <div class="card">Lojas de Shopping</div>
+    <div class="card">Lojas em Aeroporto</div>
+    <div class="card">Manutenção de Lojas</div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Marcenaria Planejar – São Paulo, SP
+</footer>
+
+</body>
+</html>

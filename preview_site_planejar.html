@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Planejar Marcenaria — Móveis Comerciais e Manutenção</title>
+  <style>
+    :root {
+      --primary: #3b2f2f;
+      --accent: #d4a45f;
+      --bg: #f7f5f2;
+      --muted: #6c6c6c;
+      --container: 1180px;
+      font-family: 'Inter', sans-serif;
+    }
+    *{ box-sizing:border-box; }
+    body{ margin:0; background:var(--bg); color:#222; }
+    .wrap{ max-width:var(--container); margin:auto; padding:32px; }
+
+    header{ background:#fff; box-shadow:0 4px 20px rgba(0,0,0,.06); position:sticky; top:0; z-index:100; }
+    .nav{ display:flex; justify-content:space-between; align-items:center; padding:22px 0; }
+    .brand{ display:flex; align-items:center; gap:14px; }
+    .logo{ width:58px; height:58px; border-radius:12px; background:linear-gradient(135deg,var(--primary),#7a5c3e); display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:22px; }
+    nav a{ margin-left:22px; text-decoration:none; color:var(--primary); font-weight:700; }
+
+    .hero{ display:grid; grid-template-columns:1fr 520px; gap:34px; align-items:center; margin-top:22px; }
+    .hero h1{ font-size:46px; margin:0; font-weight:900; }
+    .hero p{ font-size:18px; color:var(--muted); }
+    .btn{ padding:14px 28px; border-radius:10px; background:var(--primary); color:#fff; text-decoration:none; font-weight:700; display:inline-block; }
+
+    .hero-card{ background:#fff; border-radius:16px; padding:18px; box-shadow:0 8px 30px rgba(0,0,0,.08); }
+    .hero-card img{ width:100%; height:300px; object-fit:cover; border-radius:10px; }
+
+    h2{ font-size:32px; margin:40px 0 16px; font-weight:800; color:var(--primary); }
+
+    .services{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .service{ background:#fff; padding:22px; border-radius:14px; box-shadow:0 6px 24px rgba(0,0,0,.06); }
+    .service h3{ margin:0 0 6px; font-size:20px; color:var(--primary); }
+    .service p{ font-size:15px; color:var(--muted); }
+
+    .gallery{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+    .gallery img{ width:100%; height:240px; object-fit:cover; border-radius:10px; box-shadow:0 6px 20px rgba(0,0,0,.05); }
+
+    footer{ text-align:center; padding:32px; margin-top:40px; background:#fff; color:var(--muted); }
+
+    @media(max-width:960px){ .hero{ grid-template-columns:1fr; } .services{ grid-template-columns:1fr 1fr; } .gallery{ grid-template-columns:1fr 1fr; } nav a{ display:none; } }
+    @media(max-width:560px){ .services{ grid-template-columns:1fr; } .gallery{ grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="logo">PM</div>
+        <div>
+          <div style="font-weight:900;font-size:20px">Planejar Marcenaria</div>
+          <div style="font-size:13px;color:var(--muted)">Móveis Comerciais • Manutenção • Lojas e Óticas</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#instagram">Instagram</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <h1>Especialistas em Mobiliário Comercial</h1>
+        <p>Projetamos, construímos e fazemos manutenção de móveis para lojas, óticas e espaços comerciais de alto padrão. Qualidade, durabilidade e acabamento impecável.</p>
+        <a class="btn" href="https://www.instagram.com/marcenariaplanejar_" target="_blank">Ver Portfólio</a>
+      </div>
+      <aside class="hero-card">
+        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1600&auto=format&fit=crop" alt="Mobiliário comercial">
+        <div style="margin-top:12px; font-weight:700;">Móveis comerciais sob medida • Lojas • Shoppings • Óticas</div>
+      </aside>
+    </section>
+
+    <h2 id="servicos">Serviços</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Móveis para Lojas</h3>
+        <p>Balcões, vitrines, expositores, prateleiras, ilhas e displays exclusivos para seu comércio.</p>
+      </div>
+      <div class="service">
+        <h3>Óticas & Shopping</h3>
+        <p>Projetos funcionais e modernos para óticas, quiosques e lojas de shopping.</p>
+      </div>
+      <div class="service">
+        <h3>Manutenção de Móveis</h3>
+        <p>Reformas, ajustes, revitalizações e reparos completos para manter sua loja impecável.</p>
+      </div>
+    </div>
+
+    <h2 id="projetos">Projetos</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop" alt="Projeto comercial 1">
+      <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?q=80&w=1200&auto=format&fit=crop" alt="Projeto comercial 2">
+      <img src="https://images.unsplash.com/photo-1506812574058-fc75fa93fead?q=80&w=1200&auto=format&fit=crop" alt="Projeto comercial 3">
+    </div>
+
+    <h2 id="instagram">Instagram</h2>
+    <p style="color:var(--muted)">Acompanhe nossos projetos reais no Instagram:</p>
+    <script src="https://instaplug.app/embed.js" data-instaplug-id="YOUR_WIDGET_ID"></script>
+
+    <h2 id="oticas">Especialistas em Mobiliário para Óticas</h2>
+  <p style="max-width:760px; color:var(--muted); font-size:17px; line-height:1.6;">
+    Desenvolvemos projetos completos para <strong>óticas</strong>: vitrines iluminadas, expositores para armações, balcões de atendimento, gaveteiros funcionais, painéis de parede, nichos, armários técnicos e mobiliário pensado para maximizar vendas e organização. Tudo sob medida.
+  </p>
+
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1582719188393-bb71ca45dbb3?q=80&w=1200&auto=format&fit=crop" alt="Ótica 1">
+    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1200&auto=format&fit=crop" alt="Ótica 2">
+    <img src="https://images.unsplash.com/photo-1533228100845-08145b01de14?q=80&w=1200&auto=format&fit=crop" alt="Ótica 3">
+  </div>
+
+  <h2 id="manutencao">Manutenção Profissional de Móveis Comerciais</h2>
+  <p style="max-width:760px; color:var(--muted); font-size:17px; line-height:1.6;">
+    A <strong>Planejar Marcenaria</strong> oferece uma das manutenções mais completas do mercado. Atendemos lojas, óticas e comércios em geral com:
+  </p>
+
+  <ul style="line-height:1.8; font-size:17px; color:var(--primary); padding-left:20px;">
+    <li>Reparos emergenciais em balcões e prateleiras</li>
+    <li>Troca de dobradiças, corrediças e puxadores</li>
+    <li>Reforço estrutural em móveis danificados</li>
+    <li>Revestimento, pintura e revitalização completa</li>
+    <li>Reposição de peças sob medida</li>
+    <li>Ajustes finos para funcionamento perfeito</li>
+  </ul>
+
+  <p style="color:var(--muted); max-width:760px; font-size:17px;">Atendemos dentro e fora de horário comercial para evitar parar sua operação. Sua loja sempre funcionando, bonita e segura.</p>
+
+</main>
+
+  <footer>
+    © <span id="year"></span> Planejar Marcenaria — Móveis Comerciais & Manutenção
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
